@@ -23,6 +23,18 @@
     .footer {
       flex-shrink: 0;
     }
+    .instruction-step {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+      border-left: 4px solid #0d6efd;
+    }
+    .instruction-icon {
+      font-size: 1.2rem;
+      margin-right: 10px;
+      color: #0d6efd;
+    }
   </style>
 </head>
 
@@ -58,7 +70,51 @@
 
   <!-- Main Content -->
   <div class="container py-4">
-    <div class="row justify-content-center">
+    <div class="row">
+      <!-- Instructions Panel -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow">
+          <div class="card-header bg-info text-white">
+            <h5 class="mb-0">
+              <i class="bi bi-info-circle"></i>
+              How to Use
+            </h5>
+          </div>
+          <div class="card-body">
+            <div class="instruction-step">
+              <i class="bi bi-plus-circle instruction-icon"></i>
+              <strong>Add Task:</strong>
+              <p class="mb-0">Type your task in the input field and click "Add" button or press Enter.</p>
+            </div>
+            
+            <div class="instruction-step">
+              <i class="bi bi-pencil instruction-icon"></i>
+              <strong>Edit Task:</strong>
+              <p class="mb-0">Click anywhere on an uncompleted task row to edit. The row will highlight in yellow while editing.</p>
+            </div>
+            
+            <div class="instruction-step">
+              <i class="bi bi-check-circle instruction-icon"></i>
+              <strong>Complete Task:</strong>
+              <p class="mb-0">Click the green check button to mark a task as completed. Completed tasks cannot be edited.</p>
+            </div>
+            
+            <div class="instruction-step">
+              <i class="bi bi-trash instruction-icon"></i>
+              <strong>Delete Task:</strong>
+              <p class="mb-0">Click the red trash button to remove a task from the list.</p>
+            </div>
+            
+            <div class="instruction-step">
+              <i class="bi bi-keyboard instruction-icon"></i>
+              <strong>Keyboard Shortcuts:</strong>
+              <p class="mb-0">Press Enter to add/update task<br>Press Escape to cancel editing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Todo List -->
       <div class="col-md-8">
         <div class="card shadow">
           <div class="card-header bg-info text-white">
