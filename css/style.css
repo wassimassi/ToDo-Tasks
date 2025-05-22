@@ -1,0 +1,14 @@
+h1 {
+    color: blue !important;
+    margin: 20px auto !important;
+    text-align: center;
+}
+
+.container-fluid {
+    margin: 0px 5% !important;
+}
+
+/* .container {
+    margin: 0px 5% !important;
+   
+} */
